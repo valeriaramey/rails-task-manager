@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   patch 'tasks/:id', to: 'tasks#update'
   # to read one task
   get 'tasks/:id', to: 'tasks#show', as: :task
+  # delete a task
+  delete 'tasks/:id', to: 'tasks#destroy'
 end
